@@ -13,7 +13,7 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "54.234.153.24";
+$servername = $_SERVER['REMOTE_ADDR']; // aqui o sistema vai identificar o ip da origem da requisição
 $username = "root";
 $password = "Senha123";
 $database = "meubanco";
