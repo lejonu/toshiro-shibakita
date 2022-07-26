@@ -9,14 +9,12 @@
 ini_set("display_errors", 1);
 header('Content-Type: text/html; charset=iso-8859-1');
 
-
-
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = $_SERVER['REMOTE_ADDR']; // aqui o sistema vai identificar o ip da origem da requisição
-$username = "root";
-$password = "Senha123";
-$database = "meubanco";
+$servername = "192.168.0.100"; // IP da maquina que tenha o servidor MYSQL
+$username = "root";   // Usuário banco de dados
+$password = "Senha123"; // Senha do Banco de dados
+$database = "meubanco"; // Nome do Banco de dados
 
 // Criar conexão
 
