@@ -1,8 +1,9 @@
-CREATE TABLE IF NOT EXISTS dados (
-    AlunoID int,
-    Nome varchar(50),
-    Sobrenome varchar(50),
-    Endereco varchar(150),
-    Cidade varchar(50),
-    Host varchar(50)
-);
+CREATE TABLE IF NOT EXISTS `dados` (
+    `AlunoID` int(11) NOT NULL AUTO_INCREMENT,
+    `Nome` varchar(50) NOT NULL,
+    `Sobrenome` varchar(50) NOT NULL,
+    `Endereco` varchar(150) NOT NULL,
+    `Cidade` varchar(50) NOT NULL,
+    `Host` varchar(50) NOT NULL,
+    PRIMARY KEY (`AlunoID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
