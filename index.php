@@ -11,17 +11,13 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "192.168.0.100"; // IP da maquina que tenha o servidor MYSQL
-$username = "root";   // Usuário banco de dados
-$password = "Senha123"; // Senha do Banco de dados
-$database = "meubanco"; // Nome do Banco de dados
-
-// Criar conexão
-
+$servername = "192.168.1.22"; 
+$username = "root";   
+$password = "Senha123"; 
+$database = "meubanco"; 
 
 $link = new mysqli($servername, $username, $password, $database);
 
-/* check connection */
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
